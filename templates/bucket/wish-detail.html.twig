@@ -6,6 +6,7 @@
 
     <div class="container-global">
         <h1>Details</h1>
+        <a href="{{ path('wish_upload', {id : wish.id}) }}" class="btn-primary">Modifier</a>
         <ul>
             <li>{{ wish.title }}</li>
             <li>{{ wish.description }}</li>
@@ -17,10 +18,12 @@
             {% if wish.dateUpdated is not null %}
                 <li>{{ wish.dateUpdated ? wish.dateUpdated|date('d/m/y') : '' }}</li>
             {% endif %}
+            <li>{{ wish.category.name }}</li>
         </ul>
 
         <p><a href="{{ path('app_wish') }}">Retour</a></p>
-
     </div>
+
+
 
 {% endblock %}

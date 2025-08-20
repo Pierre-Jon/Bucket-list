@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme form 'bootstrap_5_layout.html.twig' %}
+
+{% block body %}
+    <div class="container-global">
+        <h1>Editer Wish</h1>
+        {{ form(form) }}
+    </div>
+{% endblock %}

@@ -113,3 +113,69 @@ ul li a:hover {
 .blanc {
     color: white;
 }
+
+
+/*CSS Formulaire*/
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titres et labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+
+}
+
+/* Champs de texte */
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Checkbox */
+form input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+form .checkbox-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #555;
+}
+
+/* Bouton submit */
+form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
