@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\WishRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: WishRepository::class)]
 class Wish
@@ -34,6 +35,7 @@ class Wish
 
     #[ORM\ManyToOne(inversedBy: 'wish')]
     #[ORM\JoinColumn(nullable: false)]
+    #[Assert\NotNull()]
     private ?Category $category = null;
 
     public function getId(): ?int

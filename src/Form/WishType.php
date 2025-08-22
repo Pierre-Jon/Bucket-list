@@ -37,6 +37,7 @@ class WishType extends AbstractType
             ])
             ->add('category', EntityType::class, [
                 'class' => Category::class,
+                'label' => 'Categorie',
                 'placeholder' => '-- Choisir une catégorie --',
                 'choice_label' => 'name',
             ])

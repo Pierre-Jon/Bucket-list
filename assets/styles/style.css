@@ -179,3 +179,20 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    transition: border-color 0.3s;
+    appearance: none; /* pour un style plus uniforme */
+}
+
+form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
